@@ -1,24 +1,41 @@
+/*---------------color variables-----------*/
+$light-gray1: #f4f5fa;
+$light-gray2: #cfd5e6;
+$gray: #b2b9d2;
+$dark-gray1: #8a8c99;
+$dark-gray2: #6c6d78;
 
-hmtl {
+/*-------------template variable----------*/
+$grid-template: "nav nav nav"
+		"header header header"
+		"cv cv cv"
+		"contact contact contact"
+    		"footer footer footer";
+/*-------------root-------------*/
+html {
 	font-size: 14px;
 }
 
+body {
+	/*background-color: $dark-gray1;*/
+}
+
+a:link, a:visited, a:active a:hover {
+	text-decoration: none;
+}
+/* ------------ DIVs ---------------*/
 .wrapper {
   	display: grid;
- 	grid-area:
-		"nav nav nav"
-		"header header header"
-		"main main main"
-    		"footer footer footer";
- 	background-color: #2196F3;
-  	padding: 10px;
+ 	grid-area: $grid-template;
+ 	background-color: $dark-gray1;
+	width: 100vw;
 }
 
 .header {
 	grid-area: header;
-	background: red;
-	
-	height: 90vh;
+	background-color: $light-gray2;
+	width: 100vw;	
+	height: 100vh;
 	grid-column: 1 / span 3;
 	grid-row: 2 / span 1;
 	
@@ -27,38 +44,61 @@ hmtl {
 .nav {
 	grid-area: nav;
 	position: fixed;
-	width: 100%;
+	width: 100vw;
 	height: 90px;
-	background: green;
+	background: $dark-gray1;
 	grid-column: 1 / span 3;
 	grid-row: 1 / span 1;
-	color: blue;
+	color: #cfd5e6e;
 	padding-top: 10px;
 	padding-left: 10px;
-	justify-content: center;
-
 	a {
-		color: blue;
+		color: $gray;
+	}
+	a:active {
+		color: $light-gray1;
 	}
 
-	.home {
-	}
-	.cv {
-	}
-	.contact {
+	p {
+		font-family: "Roboto slab", Arial, Sans-serif;
 	}
 }
 
-.main {
-	grid-area: main;
+.cv {
+	width: 100vw;
+	height: 100vh;
+	grid-area: cv;
 	grid-column: 1 / span 3;
 	grid-row: 3 / span 1;
+	background-color: $light-gray2;
+	a {
+		padding-top: 100px;
+	}
+}
+
+.contact {
+	width: 100vw;
+	height: 100vh;
+	grid-area: contact;
+	grid-column: 1 / span 3;
+	grid-row: 4 / span 1;
+	background-color: $light-gray2
 }
 
 .footer {
 	grid-area: footer;
 	grid-column: 1 / span 3;
-	grid-row: 4 / span 1;
+	grid-row: 5 / span 1;
 	height: 10vh;
+	width: 100vw;
+	background-color: $dark-gray1;
+	#footnote {
+		color: $gray;
+		text-align: center;
+		a {
+			color: $gray;
+			text-decoration: none;
+		}
+	}
 }
 
