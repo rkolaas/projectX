@@ -7,9 +7,10 @@
 <body>
 	<div class="wrapper">
 		<div class="nav">
-			<a class="home">HJEM</a>
+			<a class="home">HJEeM</a>
 			<a class="cv">CV</a>
 			<a class="contact">KONTAKT</a>
+		</div>
 		<div class="header">
 		</div>
 		
