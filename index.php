@@ -7,7 +7,7 @@
 </head>
 <body>
 	<div class="wrapper">
-		<div class="nav">
+		<div class="nav"><p>//robertkolaas</p>
 			<p class="nav-links">
 				<a href="#">PORTIFOLIO</a> //
 				<a href="#cv">CV</a> //
