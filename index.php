@@ -13,6 +13,7 @@
 				<a href="#cv">CV</a> //
 				<a href="#contact">KONTAKT</a>
 			</p>
+			<img class="logo" src="assets/gfx/logo.png">
 		</div>
 		<div class="header">
 		</div>

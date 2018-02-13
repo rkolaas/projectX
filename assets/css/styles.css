@@ -2,9 +2,13 @@
 /*-------------template variable----------*/
 /*-------------root-------------*/
 html {
+  margin: 0;
+  padding: 0;
   font-size: 14px; }
 
 body {
+  padding: 0;
+  margin: 0;
   /*background-color: $dark-gray1;*/ }
 
 a:link, a:visited, a:active a:hover {
@@ -15,7 +19,9 @@ a:link, a:visited, a:active a:hover {
   display: grid;
   grid-area: "nav nav nav" "header header header" "cv cv cv" "contact contact contact" "footer footer footer";
   background-color: #8a8c99;
-  width: 100vw; }
+  width: 100vw;
+  margin: 0;
+  padding: 0; }
 
 .header {
   grid-area: header;
@@ -23,29 +29,42 @@ a:link, a:visited, a:active a:hover {
   width: 100vw;
   height: 100vh;
   grid-column: 1 / span 3;
-  grid-row: 2 / span 1; }
+  grid-row: 2 / span 1;
+  margin: 0;
+  padding: 0; }
 
 .nav {
   grid-area: nav;
   position: fixed;
   width: 100vw;
-  height: 90px;
-  background: #8a8c99;
+  height: 110px;
+  background: linear-gradient(#8a8c99, #cfd5e6);
   grid-column: 1 / span 3;
   grid-row: 1 / span 1;
-  color: #cfd5e6e;
-  padding-top: 10px;
-  padding-left: 10px; }
+  top: 0;
+  overflow: hidden;
+  margin: 0;
+  padding: 0; }
   .nav a {
-    color: #b2b9d2; }
+    color: black;
+    font-weight: 600; }
   .nav a:active {
     color: #f4f5fa; }
   .nav a:hover {
     color: #f4f5fa; }
-  .nav p {
-    font-family: "Roboto slab", Arial, Sans-serif; }
+  .nav .nav-links {
+    font-family: "Roboto slab", Arial, Sans-serif;
+    display: inline-block;
+    float: right;
+    margin: 80px 40px 15px 0; }
+  .nav .logo {
+    display: inline-block;
+    float: left;
+    margin: 2px 15px 15px 10px; }
 
 .cv {
+  padding: 0;
+  margin: 0;
   width: 100vw;
   height: 100vh;
   grid-area: cv;
@@ -56,6 +75,8 @@ a:link, a:visited, a:active a:hover {
     padding-top: 100px; }
 
 .contact {
+  padding: 0;
+  margin: 0;
   width: 100vw;
   height: 100vh;
   grid-area: contact;
@@ -64,15 +85,19 @@ a:link, a:visited, a:active a:hover {
   background-color: #cfd5e6; }
 
 .footer {
+  padding: 0;
+  margin: 0;
   grid-area: footer;
   grid-column: 1 / span 3;
   grid-row: 5 / span 1;
   height: 10vh;
   width: 100vw;
-  background-color: #8a8c99; }
+  background: linear-gradient(#cfd5e6, #8a8c99); }
   .footer #footnote {
-    color: #b2b9d2;
+    position: relative;
+    top: 50px;
+    color: black;
     text-align: center; }
     .footer #footnote a {
-      color: #b2b9d2;
+      color: black;
       text-decoration: none; }

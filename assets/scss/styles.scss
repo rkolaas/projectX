@@ -13,10 +13,14 @@ $grid-template: "nav nav nav"
     		"footer footer footer";
 /*-------------root-------------*/
 html {
+	margin: 0;
+	padding: 0;
 	font-size: 14px;
 }
 
 body {
+	padding: 0;
+	margin: 0;
 	/*background-color: $dark-gray1;*/
 }
 
@@ -29,6 +33,8 @@ a:link, a:visited, a:active a:hover {
  	grid-area: $grid-template;
  	background-color: $dark-gray1;
 	width: 100vw;
+	margin: 0;
+	padding: 0;
 }
 
 .header {
@@ -38,6 +44,8 @@ a:link, a:visited, a:active a:hover {
 	height: 100vh;
 	grid-column: 1 / span 3;
 	grid-row: 2 / span 1;
+	margin: 0;
+	padding: 0;
 	
 }
 
@@ -45,15 +53,17 @@ a:link, a:visited, a:active a:hover {
 	grid-area: nav;
 	position: fixed;
 	width: 100vw;
-	height: 40px;
-	background: $dark-gray1;
+	height: 110px;
+	background: linear-gradient($dark-gray1, $light-gray2);
 	grid-column: 1 / span 3;
 	grid-row: 1 / span 1;
-	color: #cfd5e6e;
-	padding-top: 10px;
-	padding-left: 10px;
+	top: 0;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
 	a {
-		color: $gray;
+		color: black;
+		font-weight: 600;
 	}
 	a:active {
 		color: $light-gray1;
@@ -62,12 +72,22 @@ a:link, a:visited, a:active a:hover {
 		color: $light-gray1;
 	}
 
-	p {
+	.nav-links {
 		font-family: "Roboto slab", Arial, Sans-serif;
+		display: inline-block;
+		float: right;
+		margin: 80px 40px 15px 0;	
+	}
+	.logo {
+		display: inline-block;
+		float: left;
+		margin: 2px 15px 15px 10px;
 	}
 }
 
 .cv {
+	padding: 0;
+	margin: 0;
 	width: 100vw;
 	height: 100vh;
 	grid-area: cv;
@@ -80,6 +100,8 @@ a:link, a:visited, a:active a:hover {
 }
 
 .contact {
+	padding: 0;
+	margin: 0;
 	width: 100vw;
 	height: 100vh;
 	grid-area: contact;
@@ -89,17 +111,21 @@ a:link, a:visited, a:active a:hover {
 }
 
 .footer {
+	padding: 0;
+	margin: 0;
 	grid-area: footer;
 	grid-column: 1 / span 3;
 	grid-row: 5 / span 1;
 	height: 10vh;
 	width: 100vw;
-	background-color: $dark-gray1;
+	background: linear-gradient($light-gray2, $dark-gray1);
 	#footnote {
-		color: $gray;
+		position: relative;
+		top: 50px;
+		color: black;
 		text-align: center;
 		a {
-			color: $gray;
+			color: black;
 			text-decoration: none;
 		}
 	}

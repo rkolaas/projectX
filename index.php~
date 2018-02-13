@@ -8,6 +8,7 @@
 <body>
 	<div class="wrapper">
 		<div class="nav">
+			<img class="logo" src="assets/gfx/logo.png">
 			<p class="nav-links">
 				<a href="#">HJEM</a> //
 				<a href="#cv">CV</a> //
@@ -23,7 +24,7 @@
 			<a  a name="contact"><h2>Kontakt</h2></a>
 		</div>
 		<div class="footer">
-			<p id="footnote">Copyright &copy; Robert Kolås</p>
+			<p id="footnote">Copyright &copy; <a href="#contact">Robert Kolås</a></p>
 		</div>
 	</div>
 </body>
