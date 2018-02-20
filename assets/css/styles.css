@@ -71,6 +71,8 @@ a, a:active, a:hover, a:after {
     background-repeat: repeat;
     background-size: cover; }
     .header .cv-content img {
+      width: 200px;
+      height: auto;
       display: inline-block;
       float: right;
       top: 0; }
