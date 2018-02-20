@@ -7,11 +7,11 @@
 </head>
 <body>
 	<div class="wrapper">
-		<div class="nav"><p>//robertkolaas</p>
-			<p class="nav-links">
-				<a href="index.php">portifolio</a> //
-				<a href="cv.php">cv</a> //
-				<a href="contact.php">kontakt</a>
+		<div class="nav"><p>//<a href="index.php">robertkolaas</a></p>
+                        <p class="nav-links">
+                                <a href="portifolio.php">portifolio</a> //
+                                <a href="cv.php">cv</a> //
+                                <a href="contact.php">kontakt</a>
 			</p>
 		</div>
 		<div class="header">
