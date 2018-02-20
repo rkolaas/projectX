@@ -19,7 +19,7 @@
 
 
 <p><img src="assets/gfx/profil.png"><h1>ROBERT KOLÅS</h1>
-Samsetsveg 4, 3924 Porsgrunn // TLF: 95796349 // @mail: <a href="mailto:me@robertkolaas.no?Subject=Hei" target="_top">me@robertkolaas.no</a> // <a href="https://www.linkedin.com/in/robert-kol%C3%A5s-85307874/">linkedin</a>, <a href="https://www.robertkolaas.no">www.robertkolaas.no</a> // FØDT: 06 juni, 1986</p>
+Samsetsveg 4, 3924 Porsgrunn // TLF: 95796349 // @mail: <a href="mailto:me@robertkolaas.no?Subject=Hei" target="_top">me[at]robertkolaas.no</a> // <a href="https://www.linkedin.com/in/robert-kol%C3%A5s-85307874/">linkedin</a>, <a href="https://www.robertkolaas.no">www.robertkolaas.no</a> // FØDT: 06 juni, 1986</p>
 
 
 
@@ -57,7 +57,7 @@ blant annet fikk dekke den siste 1.mai-talen til Fidel Castro som president.</li
 (<i>2009 - 2010</i>) Ansvar over eget selger-team på 9 personer, kundeservice for Canal Digital. Hadde ansvar for opplæring av nyansatte, samt. opplæring i det som da var starten på T-we, en enkel filmutleie-app som jeg tok ansvar for å følge opp i startfasen.</li>
 <li><b>Kundekonsulent - Teleperformance</b><br/>
 (<i>2007 - 2009</i>) Ansvarsområde var da parabolkunder, besvarte alt fra bestillinger til tekniske-spørsmål. Fikk ansvar for å utvikle et kompetansehevingsprogram for alle ansatte og hadde utvidet ansvar for å rette opp i feilfaktureringer. Startet også med pplæringer i denne perioden.</li>
-<li><b>Deltid, selger - Skeidar<b><br/>
+<li><b>Deltid, selger - Skeidar</b><br/>
 (<i>2011 - 2012</i>) Jobbet som selger ved siden av studie og praksis frem til butikken ble lagt ned i slutten av 2012. Hadde ansvar for både interiør og møbel.</li>
 </ul></p>
 
@@ -75,12 +75,12 @@ blant annet fikk dekke den siste 1.mai-talen til Fidel Castro som president.</li
 <li><b>CSS</b><br/>
 <li><b>JAVA</b><br/>
 (Dette var språket vi brukte under utdanningen, utviklet en app til jobben for å forfriske minnet samt. få en bedre forståelse for objektorientert Java.)</li>
-<li><b>Python</b><li>
+<li><b>Python</b></li>
 <li><b>PHP</b></li>
 <li><b>JavaScript</b><br/>
 (Et språk jeg for tiden jobber med å sette meg inn i)</li>
-<li><b>SQL</b></li><br/>
-Språket vi brukte i databaser-faget under utdanningen</li>
+<li><b>SQL</b><br/>
+(Språket vi brukte i databaser-faget under utdanningen)</li>
 <li><b>JavaScript</b><br/>
 (Ble først introdusert til Photoshop som 13-åring, i ettertid har det vært et flittig brukt verktøy i hverdagen)</li>
 <li><b>BootStrap</b></li>
@@ -106,7 +106,7 @@ Språket vi brukte i databaser-faget under utdanningen</li>
 		</div>
 		
 		<div class="footer">
-			<p id="footnote">copyright &copy; <a href="#contact">robert kol�s</a></p>
+			<div id="footnote">copyright &copy; <a href="#contact">robert kolås</a></div>
 		</div>
 	</div>
 </body>
