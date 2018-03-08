@@ -1,8 +1,122 @@
+/* Variables */
+/* core */
 html {
-  font-size: 14px;
+  margin: 0;
   padding: 0;
-  margin: 0; }
+  font-size: 14px;
+  font-family: Roboto, Helvetica, 'sans-serif'; }
 
 body {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  overflow-x: hidden; }
+
+/* wrappers */
+.wrapper {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto;
+  grid-template-areas: "header header header" "header header header" "about about about" "portfolio portfolio portfolio" "contact contact contact" "some footer menu";
+  padding: 0;
+  margin: 0; }
+
+/* Sections */
+.header {
+  grid-area: header;
+  height: 100vh;
+  width: 100vw;
+  padding: 20px;
+  margin: 0;
+  background-color: #08734E;
+  background-image: url("/assets/gfx/logo.png");
+  background-repeat: no-repeat;
+  background-position: 2% 85%;
+  background-attachment: fixed; }
+
+.about {
+  grid-area: about;
+  height: 100vh;
+  width: 100vw;
+  background-color: #076645;
+  padding: 20px;
+  margin: 0;
+  background-image: url("/assets/gfx/logo2.png");
+  background-repeat: no-repeat;
+  background-position: 2% 85%;
+  background-attachment: fixed; }
+
+.portfolio {
+  grid-area: portfolio;
+  height: 100vh;
+  width: 100vw;
+  background-color: #08734E;
+  padding: 20px;
+  margin: 0;
+  background-image: url("/assets/gfx/logo.png");
+  background-repeat: no-repeat;
+  background-position: 2% 85%;
+  background-attachment: fixed; }
+
+.contact {
+  grid-area: contact;
+  height: 100vh;
+  width: 100vw;
+  background-color: #076645;
+  padding: 20px;
+  margin: 0;
+  background-image: url("/assets/gfx/logo2.png");
+  background-repeat: no-repeat;
+  background-position: 2% 85%;
+  background-attachment: fixed; }
+
+/* Elements */
+.content-wrapper {
+  border-radius: 15px;
+  margin: 0;
+  width: 50vw;
+  height: 90vh;
+  margin: 0 auto;
+  background-color: #FFFFFF; }
+  .content-wrapper .content {
+    border-radius: 10px;
+    padding: 5px;
+    width: 46vw;
+    height: 88vh;
+    margin: 0 auto;
+    background-color: #FFFFFF;
+    overflow-y: auto; }
+    .content-wrapper .content h1 {
+      padding: 0;
+      margin: 0 auto; }
+    .content-wrapper .content img {
+      width: 200px;
+      height: auto;
+      display: inline-block;
+      float: right;
+      top: 0; }
+
+.footer {
+  position: fixed;
+  bottom: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  grid-area: footer;
+  height: 10vh;
+  width: 100%;
+  background-color: #373B3A;
+  border-radius: 15px 15px 0 0; }
+  .footer .some {
+    float: left;
+    position: relative;
+    margin-top: 10px;
+    margin-left: 20px;
+    width: 300px;
+    grid-area: some; }
+  .footer .menu {
+    float: right;
+    position: relative;
+    grid-area: menu;
+    margin-top: 20px;
+    margin-right: 50px; }
+    .footer .menu .img {
+      padding-right: 20px; }
