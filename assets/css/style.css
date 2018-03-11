@@ -91,7 +91,6 @@ body {
     .content-wrapper .content img {
       width: 200px;
       height: auto;
-      display: inline-block;
       float: right;
       top: 0; }
 

@@ -9,12 +9,12 @@
             $(function(){
                 $("#cvContent").load("/includes/cv.html");
                 $("#portfolioContent").load("/includes/portfolio.html");
-                $("#contactContent").load("/includes/test.html"); 
+                $("#contactContent").load("/includes/contact.html"); 
             });
         </script> 
     </head>
     <body>
-        <div class "wrapper">
+        <div class="wrapper">
             <div class="header">
             </div>
             <div class="about" id="cv">
