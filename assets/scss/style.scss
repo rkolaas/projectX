@@ -9,9 +9,13 @@ $gridLayout :
 ;
 $sectionPadding: 20px;
 $bgText: #FFFFFF;
-$bgColor1: #08734E;
-$bgColor2: #076645;
-$footerColor: #373B3A;
+$bgColor1: #1D94BF;
+$bgColor2: #27C6FF;
+$footerColor: #13637F;
+$bgImg: url("/assets/gfx/background.png");
+$bgImg2: url("/assets/gfx/background2.png");
+$bgImg3: url("/assets/gfx/background3.png");
+
 /* core */
 html {
     margin: 0;
@@ -43,9 +47,8 @@ body{
     padding: $sectionPadding;
     margin: 0;
     background-color: $bgColor1;
-    background-image: url("/assets/gfx/logo.png");
+    background-image: $bgImg;
     background-repeat: no-repeat;
-    background-position: 2% 85%;
     background-attachment: fixed;
 }
 .about{
@@ -55,9 +58,8 @@ body{
     background-color: $bgColor2;
     padding: $sectionPadding;
     margin: 0;
-    background-image: url("/assets/gfx/logo2.png");
+    background-image: $bgImg2;
     background-repeat: no-repeat;
-    background-position: 2% 85%;
     background-attachment: fixed;
 }
 .portfolio{
@@ -67,9 +69,8 @@ body{
     background-color: $bgColor1;
     padding: $sectionPadding;
     margin: 0;
-    background-image: url("/assets/gfx/logo.png");
+    background-image: $bgImg3;
     background-repeat: no-repeat;
-    background-position: 2% 85%;
     background-attachment: fixed;
 }
 .contact{
@@ -79,9 +80,8 @@ body{
     background-color: $bgColor2;
     padding: $sectionPadding;
     margin: 0;
-    background-image: url("/assets/gfx/logo2.png");
+    background-image: $bgImg2;
     background-repeat: no-repeat;
-    background-position: 2% 85%;
     background-attachment: fixed;
 }
 /* Elements */
@@ -95,16 +95,17 @@ body{
     .content{
         border-radius: 10px;
         padding: 5px;
-        width: 46vw;
-        height: 88vh;
+        width: 95%;
+        height: 99%;
         margin: 0 auto;
         background-color: $bgText;
         overflow-y: auto;
+        overflow-x: hidden;
         h1 {
                 padding: 0;
                 margin: 0 auto;
         }
-        img{
+        #profileImg{
             width: 200px;
             height: auto;
             float: right;
@@ -139,6 +140,55 @@ body{
         margin-right: 50px;
         .img{
             padding-right: 20px;
+            size: 0.5%;
         }
+    }
+}
+
+/* Contact form */
+input, textarea {
+    padding: 10px;
+    border: 1px solid;
+    width: 200px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
+    -moz-box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
+    border-radius: 15px;
+}
+textarea {
+    min-width: 400px;
+    max-width: 400px;
+    min-height: 200px;
+    max-height: 200px;
+    line-height: 200px;
+    border-radius: 15px;
+}
+
+input:hover, textarea:hover,
+input:focus, textarea:focus {
+    border-color: 1px solid #C9C9C9;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 8px;
+    -moz-box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 8px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 8px;
+}
+
+.form{
+    label{
+        margin-left: 10px;
+        color: #999999;
+    }
+}
+
+/* Submit button */
+
+.submit {
+    input{
+        width: 100px;
+        height: 40px;
+        background-color: $footerColor;
+        color: white;
+        border-radius: 5px;
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
     }
 }
