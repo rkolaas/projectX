@@ -26,7 +26,6 @@ html {
 body{
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
 }
 /* wrappers */
 
@@ -190,5 +189,43 @@ input:focus, textarea:focus {
         border-radius: 5px;
         -moz-border-radius: 5px;
         -webkit-border-radius: 5px;
+    }
+}
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    .content-wrapper{
+        border-radius: 15px;
+        margin: 0;
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        background-color: $bgText;
+        .content{
+            border-radius: 10px;
+            padding: 5px;
+            width: 95%;
+            height: auto;
+            margin: 0 auto;
+            background-color: $bgText;
+            overflow-y: hidden;
+            overflow-x: hidden;
+            h1 {
+                    padding: 0;
+                    margin: 0 auto;
+            }
+            #profileImg{
+                width: 200px;
+                height: auto;
+                float: none;
+                top: 0;
+            }
+        }
+    }
+    .about .contact .portfolio {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        height: auto;
+        overflow: hidden;
     }
 }
