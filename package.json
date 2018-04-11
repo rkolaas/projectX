@@ -1,0 +1,26 @@
+{
+  "name": "robertkolaas.no",
+  "version": "1.0.0",
+  "description": "Personal website",
+  "main": "index.js",
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "node-sass": "^4.8.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "npm run scss-compile",
+    "scss-compile": "node-sass -rw assets/scss -o assets/css",
+    "watch": "npm run scss-compile"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rkolaas/projectX.git"
+  },
+  "author": "Robert Kolås",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rkolaas/projectX/issues"
+  },
+  "homepage": "https://github.com/rkolaas/projectX#readme"
+}
