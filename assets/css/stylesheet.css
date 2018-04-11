@@ -1,2 +1,32 @@
 html {
-  font-family: 'Courier New', Courier, monospace; }
+  font-family: 'Courier New', Courier, monospace;
+  padding: 0;
+  margin: 0; }
+
+#nav {
+  text-align: center;
+  background: black;
+  height: 10vh;
+  width: 100vw; }
+  #nav #nav2 {
+    background: white;
+    top: 1.5vh; }
+  #nav #title {
+    background: white;
+    top: 1.5vh; }
+  #nav #links {
+    background: white;
+    top: 1.5vh; }
+
+#header {
+  background: cadetblue;
+  height: 100vh;
+  width: 100vw; }
+  #header #content {
+    background: wheat;
+    height: 80vh;
+    text-align: center;
+    top: 5vh;
+    border-radius: 5px; }
+  #header .filler {
+    width: 20%; }

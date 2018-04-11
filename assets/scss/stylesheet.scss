@@ -1,7 +1,42 @@
+$navTopMargin: 1.5vh;
+
 html {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Courier New', Courier, monospace; 
+    padding: 0;
+    margin: 0;
 }
 
-.container{
+#nav {
+    text-align: center;
+    background: rgb(0, 0, 0); 
+    height: 10vh;
+    width: 100vw;
+    #nav2 {
+        background: white;
+        top: $navTopMargin;
+    }
+    #title {
+        background: white;
+        top: $navTopMargin;
+    }
+    #links {
+        background: white;
+        top: $navTopMargin;
+    }
+}
 
+#header {
+    background: cadetblue; 
+    height: 100vh;
+    width: 100vw;
+    #content {
+        background: wheat;
+        height: 80vh;
+        text-align: center;
+        top: 5vh;
+        border-radius: 5px;
+    }
+    .filler {
+        width: 20%;
+    }
 }
