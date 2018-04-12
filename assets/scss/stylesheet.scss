@@ -1,14 +1,18 @@
 $navTopMargin: 1.5vh;
+$testColor1: #E1EABF;
+$testColor2: #FFFEE8;
+$testColor3: #F6F6DA;
+$testColor4: #F4F0D7;
 
-html {
-    font-family: 'Courier New', Courier, monospace; 
+body html {
+    font-family: Roboto, arial, monospace; 
     padding: 0;
     margin: 0;
 }
 
 #nav {
     text-align: center;
-    background: white; 
+    background: $testColor1; 
     height: 8vh;
     width: 100vw;
     #nav2 {
@@ -18,17 +22,21 @@ html {
         top: $navTopMargin;
     }
     #links {
-        background: white;
         top: $navTopMargin;
+    }
+    #menu {
+        background: $testColor1;
+        .divider {
+            background-color: $testColor4;
+        }
     }
 }
 
 .section {
-    background: cadetblue; 
+    background: white; 
     height: 100vh;
-    width: 100vw;
     #content {
-        background: wheat;
+        background: $testColor4;
         height: 80vh;
         text-align: center;
         top: 10vh;
@@ -38,6 +46,29 @@ html {
 .footer {
     height: 50vh;
     text-align: center;
+    background: $testColor1;
+    #socialLinks {
+        top: 40px;
+        #socialList {
+            list-style-type: none;
+            .fa {
+                padding: 5px;
+                font-size: 30px;
+                width: 50px;
+                text-align: center;
+                text-decoration: none;
+            }
+            .fa:hover {
+                opacity: 0.7;
+            }
+        }
+    }
+    #copyright {
+        top: 20px;
+    }
+    #contact {
+        top: 40px;
+    }
     li {
         text-align: center;
         list-style: inside;

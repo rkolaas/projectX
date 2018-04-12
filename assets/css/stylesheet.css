@@ -1,11 +1,11 @@
-html {
-  font-family: 'Courier New', Courier, monospace;
+body html {
+  font-family: Roboto, arial, monospace;
   padding: 0;
   margin: 0; }
 
 #nav {
   text-align: center;
-  background: white;
+  background: #E1EABF;
   height: 8vh;
   width: 100vw; }
   #nav #nav2 {
@@ -13,15 +13,17 @@ html {
   #nav #title {
     top: 1.5vh; }
   #nav #links {
-    background: white;
     top: 1.5vh; }
+  #nav #menu {
+    background: #E1EABF; }
+    #nav #menu .divider {
+      background-color: #F4F0D7; }
 
 .section {
-  background: cadetblue;
-  height: 100vh;
-  width: 100vw; }
+  background: white;
+  height: 100vh; }
   .section #content {
-    background: wheat;
+    background: #F4F0D7;
     height: 80vh;
     text-align: center;
     top: 10vh;
@@ -29,7 +31,24 @@ html {
 
 .footer {
   height: 50vh;
-  text-align: center; }
+  text-align: center;
+  background: #E1EABF; }
+  .footer #socialLinks {
+    top: 40px; }
+    .footer #socialLinks #socialList {
+      list-style-type: none; }
+      .footer #socialLinks #socialList .fa {
+        padding: 5px;
+        font-size: 30px;
+        width: 50px;
+        text-align: center;
+        text-decoration: none; }
+      .footer #socialLinks #socialList .fa:hover {
+        opacity: 0.7; }
+  .footer #copyright {
+    top: 20px; }
+  .footer #contact {
+    top: 40px; }
   .footer li {
     text-align: center;
     list-style: inside; }
