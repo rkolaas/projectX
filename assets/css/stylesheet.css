@@ -1,39 +1,56 @@
+/* --------- VARIABLES --------- */
 body {
   font-family: 'Roboto', serif !important;
   padding: 0;
-  margin: 0; }
+  margin: 0;
+  color: #316876 !important; }
 
+/* --------- NAV --------- */
 #nav {
   color: #316876;
-  text-align: center;
   background: #E1EABF;
+  background-image: url(/assets/gfx/bgPattern.png);
   height: 8vh;
   border-bottom: #C7C4A3 1.5px solid; }
-  #nav .nav > li > a {
-    color: #316876; }
+  #nav .nav > li > a,
+  #nav .nav > li > a:visited {
+    background: #E1EABF;
+    background-image: url(/assets/gfx/bgPattern.png);
+    color: #316876;
+    font-size: 1.5em; }
   #nav .nav > li > a.active,
   #nav .nav > li > a:hover,
   #nav .nav > li > a:focus {
-    color: gray;
-    background-color: #F4F0D7; }
+    color: white;
+    background: #E1EABF;
+    background-image: url(/assets/gfx/bgPattern.png); }
   #nav .dropdown-menu > li > a {
     color: #316876; }
   #nav .dropdown-menu > li > a:active,
   #nav .dropdown-menu > li > a:hover,
   #nav .dropdown-menu > li > a:focus {
-    color: gray;
+    color: black;
     background-color: #F4F0D7; }
   #nav #nav2 {
     top: 1.5vh; }
   #nav #title {
-    top: 1.5vh; }
+    top: 3.5vh;
+    font-size: 1.5em;
+    transition: 2s; }
+  #nav #title:hover {
+    color: #E1EABF;
+    text-shadow: 0px 0px 10px #316876; }
   #nav #links {
-    top: 1.5vh; }
+    top: 2.5vh; }
   #nav #menu {
-    background-color: #E1EABF; }
+    background-color: #E1EABF;
+    background-image: url(/assets/gfx/bgPattern.png);
+    border: #C7C4A3 1.5px solid;
+    border-top: none; }
     #nav #menu .divider {
       background-color: #F4F0D7; }
 
+/* --------- SECTIONS --------- */
 .section {
   background-color: white;
   background-image: url(/assets/gfx/background.png), url(/assets/gfx/background2.png);
@@ -46,7 +63,8 @@ body {
   padding-top: 8vh; }
   .section .content {
     background: #F4F0D7;
-    min-height: 80vh;
+    background-image: url(/assets/gfx/bgPattern.png/);
+    min-height: 60vh;
     max-height: auto;
     overflow: auto;
     top: 10vh;
@@ -56,22 +74,42 @@ body {
     bottom: 10vh; }
     .section .content .headline {
       font-family: 'Roboto Slab';
+      background-image: url(/assets/gfx/bgPattern.png);
       background-color: #E1EABF;
       color: #316876; }
+      .section .content .headline h2 {
+        transition: 2s; }
+      .section .content .headline h2:hover {
+        color: #E1EABF;
+        text-shadow: 0px 0px 10px #316876; }
     .section .content .sub-headline {
       font-family: 'Roboto';
       font-size: 1.5em;
-      padding-top: 3vh; }
+      padding-top: 3vh;
+      transition: 2s; }
+    .section .content .sub-headline:hover {
+      color: black; }
     .section .content .plainText {
       font-family: 'Roboto';
-      padding-top: 3vh; }
+      padding-top: 3vh;
+      font-size: 1.2em;
+      transition: 2s; }
+    .section .content .plainText:hover {
+      color: black; }
+      .section .content .plainText:hover .headline2:hover {
+        color: black; }
+    .section .content .headline2 {
+      text-align: center;
+      transition: 2s; }
 
+/* --------- FOOTER --------- */
 .footer {
   color: #316876;
   height: 250px;
   border-top: #C7C4A3 1.5px solid;
   text-align: center;
-  background: #E1EABF; }
+  background: #E1EABF;
+  background-image: url(/assets/gfx/bgPattern.png); }
   .footer #socialLinks {
     top: 40px; }
     .footer #socialLinks #socialList li {

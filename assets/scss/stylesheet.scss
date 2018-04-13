@@ -1,3 +1,4 @@
+/* --------- VARIABLES --------- */
 $navTopMargin: 1.5vh;
 $testColor1: #E1EABF;
 $testColor2: #FFFEE8;
@@ -6,27 +7,34 @@ $testColor4: #F4F0D7;
 $borderColor: #C7C4A3;
 $HeadlineColor: #316876;
 $HeadlineColor2: #319A76;
+$transformColor: black;
 
 body {
     font-family: 'Roboto', serif !important;
     padding: 0;
     margin: 0;
+    color: $HeadlineColor !important;
 }
-
+/* --------- NAV --------- */
 #nav {
     color: $HeadlineColor;
-    text-align: center;
     background: $testColor1; 
+    background-image: url(/assets/gfx/bgPattern.png);
     height: 8vh;
     border-bottom: $borderColor 1.5px solid; 
-    .nav>li>a {
+    .nav>li>a,
+    .nav>li>a:visited {
+        background: $testColor1; 
+        background-image: url(/assets/gfx/bgPattern.png);
         color: $HeadlineColor;
+        font-size: 1.5em;
     }
     .nav>li>a.active,
     .nav>li>a:hover,
     .nav>li>a:focus {
-        color: gray;
-        background-color: $testColor4;
+        color: white;
+        background: $testColor1; 
+        background-image: url(/assets/gfx/bgPattern.png);
     }
     .dropdown-menu>li>a {
         color: $HeadlineColor;
@@ -34,7 +42,7 @@ body {
     .dropdown-menu>li>a:active,
     .dropdown-menu>li>a:hover,
     .dropdown-menu>li>a:focus {
-        color: gray;
+        color: black;
         background-color: $testColor4;
     }
     
@@ -42,18 +50,28 @@ body {
         top: $navTopMargin;
     }
     #title {
-        top: $navTopMargin;
+        top: 3.5vh;
+        font-size: 1.5em;
+        transition: 2s;
+    }
+    #title:hover {
+        color: $testColor1;
+        text-shadow: 0px 0px 10px $HeadlineColor;        
     }
     #links {
-        top: $navTopMargin;
+        top: 2.5vh;
     }
     #menu{
         background-color: $testColor1;
+        background-image: url(/assets/gfx/bgPattern.png);
+        border: $borderColor 1.5px solid;
+        border-top: none;
         .divider {
             background-color: $testColor4;
         }
     }
 }
+/* --------- SECTIONS --------- */
 .section {
     background-color: white; 
     background-image: url(/assets/gfx/background.png), url(/assets/gfx/background2.png);
@@ -66,7 +84,8 @@ body {
     padding-top: 8vh;
     .content {
         background: $testColor4;
-        min-height: 80vh;
+        background-image: url(/assets/gfx/bgPattern.png/);
+        min-height: 60vh;
         max-height: auto;
         overflow: auto;
         top: 10vh;
@@ -76,26 +95,52 @@ body {
         bottom: 10vh;
         .headline {
             font-family: 'Roboto Slab';
+            background-image: url(/assets/gfx/bgPattern.png);
             background-color: $testColor1;
             color: $HeadlineColor;
+            h2 {
+                transition: 2s;
+            }
+            h2:hover {               
+            color: $testColor1;
+            text-shadow: 0px 0px 10px $HeadlineColor;
+            }
         }
         .sub-headline {
             font-family: 'Roboto';
             font-size: 1.5em;
             padding-top: 3vh;
+            transition: 2s;
+        }
+        .sub-headline:hover {
+            color: $transformColor;
         }
         .plainText {
             font-family: 'Roboto';
             padding-top: 3vh;
+            font-size: 1.2em;
+            transition: 2s;
+        }
+        .plainText:hover {
+            color: $transformColor;
+            .headline2:hover {
+                color: $transformColor;
+            }
+        }
+        .headline2 {
+            text-align: center;
+            transition: 2s;
         }
     }
 }
+/* --------- FOOTER --------- */
 .footer {
     color: $HeadlineColor;
     height: 250px;
     border-top: $borderColor 1.5px solid; 
     text-align: center;
     background: $testColor1;
+    background-image: url(/assets/gfx/bgPattern.png);
 
     #socialLinks {
         top: 40px;
