@@ -30,12 +30,12 @@
     <body>
         <!-- Navigation bar -->
         <div class="col-sm-12 navbar-fixed-top" id="nav" role="navigation" >
-                <div class="col-sm-3" id="title">
-                    <h2>../robertkolaas.no/</h2>
+                <div class="hidden-xs col-sm-9 col-md-3" id="title">
+                    <h2>Robert Kolås</h2>
                 </div>
-                <div class="col-sm-6" id="nav2">
+                <div class="hidden-xs hidden-sm col-md-7" id="nav2">
                 </div>
-                <div class="col-sm-3" id="links">  
+                <div class="col-sm-12 col-sm-3 col-md-2" id="links">  
                     <!-- imported nav.html -->   
                 </div>
         </div>

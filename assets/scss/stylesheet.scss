@@ -92,16 +92,18 @@ body {
 }
 .footer {
     color: $HeadlineColor;
-    height: 100px;
+    height: 250px;
     border-top: $borderColor 1.5px solid; 
     text-align: center;
     background: $testColor1;
+
     #socialLinks {
         top: 40px;
         #socialList {
             li {
                 list-style-type: none;
                 display: inline-block;
+                min-height: 100px;
             }
             .fa {
                 color: $HeadlineColor;
