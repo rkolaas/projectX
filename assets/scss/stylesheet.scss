@@ -28,16 +28,18 @@ body {
         background-image: url(/assets/gfx/bgPattern.png);
         color: $HeadlineColor;
         font-size: 1.5em;
+        transition: 2s;
     }
     .nav>li>a.active,
     .nav>li>a:hover,
     .nav>li>a:focus {
-        color: white;
-        background: $testColor1; 
+        color: $testColor1;
+        text-shadow: 0px 0px 10px $HeadlineColor;
         background-image: url(/assets/gfx/bgPattern.png);
     }
     .dropdown-menu>li>a {
         color: $HeadlineColor;
+        transition: 1s;
     }
     .dropdown-menu>li>a:active,
     .dropdown-menu>li>a:hover,
@@ -82,6 +84,8 @@ body {
     min-height: 20vh;
     height: auto;
     padding-top: 8vh;
+    
+    animation: bgMove 4s infinite;
     .content {
         background: $testColor4;
         background-image: url(/assets/gfx/bgPattern.png/);
@@ -101,7 +105,7 @@ body {
             h2 {
                 transition: 2s;
             }
-            h2:hover {               
+            h2:hover {
             color: $testColor1;
             text-shadow: 0px 0px 10px $HeadlineColor;
             }
@@ -157,9 +161,11 @@ body {
                 width: 50px;
                 text-align: center;
                 text-decoration: none;
+                transition: 1s;
             }
             .fa:hover {
-                color: white;
+                color: $testColor1;
+                text-shadow: 0px 0px 10px $HeadlineColor;
             }
         }
     }
@@ -174,4 +180,16 @@ body {
         list-style: inside;
     }
     
+}
+
+@keyframes bgMove {
+	0% {
+		background-position-y: 50vh;
+	}
+	50% {
+		background-position-y: 48vh;
+	}
+	100% {
+		background-position-y: 50vh;
+	}
 }
