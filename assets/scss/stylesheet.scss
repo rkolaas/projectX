@@ -13,18 +13,18 @@ $navTopMargin: 1.5vh;
 $testColor1: #010A0A;
 $testColor2: #FFFEE8;
 $testColor3: #F6F6DA;
-$testColor4: #F3C545;
-$borderColor: #856B26;
+$testColor4: white;
+$borderColor: black;
 $plainTextColor: gray;
 $HeadlineColor: white;
-$HeadlineColor2: #A49684;
+$HeadlineColor2: gray;
 $transformColor: white;
 $transformColor2: black;
 
 body {
     font-family: 'Roboto', serif !important;
     padding: 0;
-    margin-top: 10vh !important;
+    margin-top: 15vh !important;
     color: $HeadlineColor2 !important;
     background-color: white; 
     background-image: url(/assets/gfx/background1.png), url(/assets/gfx/background21.png);
@@ -99,11 +99,18 @@ body {
     border: none;
     background-color: transparent !important;
     text-align: center;
-    #splashLogo {
+    h1 {
+        color: $testColor1 !important;
+    }
+    h2 {
+        color: $testColor1;
+    }
+    h3 {
+        color: $testColor1;
     }
 }
 .section {
-    
+    margin-top: 18vh !important;
     min-height: 20vh;
     height: auto;
     padding-top: 8vh;
@@ -220,7 +227,7 @@ svg {
     width: 100%;
     height: auto;
     fill: none;
-    stroke: $testColor4;
+    stroke: $testColor1;
     stroke-width: 3;
     
     path {
@@ -249,4 +256,17 @@ svg {
 
 .testClass {
     color: brown;
+}
+
+#splashTitle {
+    animation-delay: 4s;
+}
+#splashTitle2 {
+    animation-delay: 5s;
+}
+#splashTitle3 {
+    animation-delay: 6s;
+}
+.section {
+    animation-delay: 0.6s;
 }
