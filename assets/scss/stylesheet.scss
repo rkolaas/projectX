@@ -1,5 +1,5 @@
 /* --------- VARIABLES --------- */
-$navTopMargin: 1.5vh;
+/*$navTopMargin: 1.5vh;
 $testColor1: #E1EABF;
 $testColor2: #FFFEE8;
 $testColor3: #F6F6DA;
@@ -7,25 +7,49 @@ $testColor4: #F4F0D7;
 $borderColor: #C7C4A3;
 $HeadlineColor: #316876;
 $HeadlineColor2: #319A76;
-$transformColor: black;
+$transformColor: black;*/
+/* Test */
+$navTopMargin: 1.5vh;
+$testColor1: #010A0A;
+$testColor2: #FFFEE8;
+$testColor3: #F6F6DA;
+$testColor4: #F3C545;
+$borderColor: #856B26;
+$plainTextColor: gray;
+$HeadlineColor: white;
+$HeadlineColor2: #A49684;
+$transformColor: white;
+$transformColor2: black;
 
 body {
     font-family: 'Roboto', serif !important;
     padding: 0;
-    margin: 0;
-    color: $HeadlineColor !important;
+    margin-top: 10vh !important;
+    color: $HeadlineColor2 !important;
+    background-color: white; 
+    background-image: url(/assets/gfx/background1.png), url(/assets/gfx/background21.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position-y: 50vh, 50vh;
+    background-position-x: 4vw, 85vw;
+    animation: bgMove 4s infinite;
 }
+.downArrow {
+    position: absolute;
+    bottom: 0;
+    left: 48vw;
+}
+
 /* --------- NAV --------- */
 #nav {
     color: $HeadlineColor;
     background: $testColor1; 
-    background-image: url(/assets/gfx/bgPattern.png);
+    /*background-image: url(/assets/gfx/bgPattern.png);*/
     height: 8vh;
-    border-bottom: $borderColor 1.5px solid; 
     .nav>li>a,
     .nav>li>a:visited {
         background: $testColor1; 
-        background-image: url(/assets/gfx/bgPattern.png);
+        /*background-image: url(/assets/gfx/bgPattern.png);*/
         color: $HeadlineColor;
         font-size: 1.5em;
         transition: 2s;
@@ -33,9 +57,8 @@ body {
     .nav>li>a.active,
     .nav>li>a:hover,
     .nav>li>a:focus {
-        color: $testColor1;
-        text-shadow: 0px 0px 10px $HeadlineColor;
-        background-image: url(/assets/gfx/bgPattern.png);
+        color: $transformColor;
+        /*background-image: url(/assets/gfx/bgPattern.png);*/
     }
     .dropdown-menu>li>a {
         color: $HeadlineColor;
@@ -52,40 +75,40 @@ body {
         top: $navTopMargin;
     }
     #title {
-        top: 3.5vh;
+        top: 3vh;
         font-size: 1.5em;
         transition: 2s;
     }
     #title:hover {
-        color: $testColor1;
-        text-shadow: 0px 0px 10px $HeadlineColor;        
+        color: $transformColor;     
     }
     #links {
-        top: 2.5vh;
+        top: 2vh;
     }
     #menu{
         background-color: $testColor1;
-        background-image: url(/assets/gfx/bgPattern.png);
-        border: $borderColor 1.5px solid;
-        border-top: none;
+        /*background-image: url(/assets/gfx/bgPattern.png);*/
         .divider {
             background-color: $testColor4;
         }
     }
 }
 /* --------- SECTIONS --------- */
+.jumbotron {
+    height: 85vh;
+    border: none;
+    background-color: transparent !important;
+    text-align: center;
+    #splashLogo {
+    }
+}
 .section {
-    background-color: white; 
-    background-image: url(/assets/gfx/background.png), url(/assets/gfx/background2.png);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position-y: 50vh, 50vh;
-    background-position-x: 4vw, 85vw;
+    
     min-height: 20vh;
     height: auto;
     padding-top: 8vh;
     
-    animation: bgMove 4s infinite;
+    
     .content {
         background: $testColor4;
         background-image: url(/assets/gfx/bgPattern.png/);
@@ -95,19 +118,20 @@ body {
         top: 10vh;
         border-radius: 5px;
         border: $borderColor 1.5px solid;
+        border-top: none;
         padding-top: 0vh;
         bottom: 10vh;
         .headline {
             font-family: 'Roboto Slab';
-            background-image: url(/assets/gfx/bgPattern.png);
+            /*background-image: url(/assets/gfx/bgPattern.png);*/
             background-color: $testColor1;
             color: $HeadlineColor;
             h2 {
                 transition: 2s;
             }
             h2:hover {
-            color: $testColor1;
-            text-shadow: 0px 0px 10px $HeadlineColor;
+                color: $transformColor;
+                text-decoration: underline;
             }
         }
         .sub-headline {
@@ -117,7 +141,7 @@ body {
             transition: 2s;
         }
         .sub-headline:hover {
-            color: $transformColor;
+            color: $transformColor2;
         }
         .plainText {
             font-family: 'Roboto';
@@ -126,9 +150,9 @@ body {
             transition: 2s;
         }
         .plainText:hover {
-            color: $transformColor;
+            color: $transformColor2;
             .headline2:hover {
-                color: $transformColor;
+                color: $transformColor2;
             }
         }
         .headline2 {
@@ -141,10 +165,9 @@ body {
 .footer {
     color: $HeadlineColor;
     height: 250px;
-    border-top: $borderColor 1.5px solid; 
     text-align: center;
     background: $testColor1;
-    background-image: url(/assets/gfx/bgPattern.png);
+    /*background-image: url(/assets/gfx/bgPattern.png);*/
 
     #socialLinks {
         top: 40px;
@@ -161,11 +184,10 @@ body {
                 width: 50px;
                 text-align: center;
                 text-decoration: none;
-                transition: 1s;
+                transition: 2s;
             }
             .fa:hover {
-                color: $testColor1;
-                text-shadow: 0px 0px 10px $HeadlineColor;
+                color: $transformColor;
             }
         }
     }
@@ -192,4 +214,39 @@ body {
 	100% {
 		background-position-y: 50vh;
 	}
+}
+svg {
+    max-width: 88rem;
+    width: 100%;
+    height: auto;
+    fill: none;
+    stroke: $testColor4;
+    stroke-width: 3;
+    
+    path {
+        stroke-dasharray: 1500;
+        stroke-dashoffset: -1500;
+        
+        @for $i from 1 through 15 {
+            
+            &:nth-of-type(#{$i}) {
+                animation: draw 1000ms #{$i * 250}ms forwards;
+            }
+            
+        }
+        
+    }
+    
+}
+
+@keyframes draw {
+	
+	100% {
+		stroke-dashoffset: 0;
+	}
+	
+}
+
+.testClass {
+    color: brown;
 }
