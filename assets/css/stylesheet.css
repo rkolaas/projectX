@@ -20,31 +20,34 @@ body {
   background-attachment: fixed;
   background-position-y: 50vh, 50vh;
   background-position-x: 4vw, 85vw;
-  animation: bgMove 4s infinite; }
+  animation: bgMove 4s infinite;
+  overflow-x: hidden; }
 
-.downArrow {
-  position: absolute;
-  bottom: 0;
-  left: 48vw; }
+.downArrow img {
+  display: block;
+  margin: 0 auto;
+  width: 40px;
+  height: 40px; }
+
+a {
+  color: white !important;
+  text-decoration: none !important; }
 
 /* --------- NAV --------- */
 #nav {
   color: white;
   background: #010A0A;
-  /*background-image: url(/assets/gfx/bgPattern.png);*/
   height: 8vh; }
   #nav .nav > li > a,
   #nav .nav > li > a:visited {
-    background: #010A0A;
-    /*background-image: url(/assets/gfx/bgPattern.png);*/
+    background: none;
     color: white;
     font-size: 1.5em;
     transition: 2s; }
   #nav .nav > li > a.active,
   #nav .nav > li > a:hover,
   #nav .nav > li > a:focus {
-    color: white;
-    /*background-image: url(/assets/gfx/bgPattern.png);*/ }
+    color: white; }
   #nav .dropdown-menu > li > a {
     color: white;
     transition: 1s; }
@@ -59,6 +62,8 @@ body {
     top: 3vh;
     font-size: 1.5em;
     transition: 2s; }
+    #nav #title #titleLink {
+      text-decoration: none; }
   #nav #title:hover {
     color: white; }
   #nav #links {
@@ -89,27 +94,34 @@ body {
   padding-top: 8vh; }
   .section .content {
     background: white;
-    background-image: url(/assets/gfx/bgPattern.png/);
-    min-height: 60vh;
     max-height: auto;
     overflow: auto;
     top: 10vh;
     border-radius: 5px;
     border: black 1.5px solid;
     border-top: none;
-    padding-top: 0vh;
+    padding: 0vh;
     bottom: 10vh;
     overflow: hidden; }
+    .section .content .imgContainer {
+      padding: 0;
+      background-image: url(/assets/gfx/pattern2.png);
+      background-repeat: repeat-x;
+      height: 200px;
+      width: 100%; }
+      .section .content .imgContainer img {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        max-height: 200px;
+        padding-top: 0px;
+        padding-bottom: 0px; }
     .section .content .headline {
+      padding-left: 2vw;
       font-family: 'Roboto Slab';
       /*background-image: url(/assets/gfx/bgPattern.png);*/
       background-color: #010A0A;
       color: white; }
-      .section .content .headline h2 {
-        transition: 2s; }
-      .section .content .headline h2:hover {
-        color: white;
-        text-decoration: underline; }
     .section .content .sub-headline {
       font-family: 'Roboto';
       font-size: 1.5em;
@@ -139,27 +151,24 @@ body {
   /*background-image: url(/assets/gfx/bgPattern.png);*/ }
   .footer #socialLinks {
     top: 40px; }
-    .footer #socialLinks #socialList li {
-      list-style-type: none;
+    .footer #socialLinks .fa {
       display: inline-block;
-      min-height: 100px; }
-    .footer #socialLinks #socialList .fa {
-      color: white;
-      padding: 5px;
-      font-size: 30px;
+      color: gray !important;
+      padding-left: 10px;
       width: 50px;
       text-align: center;
-      text-decoration: none;
-      transition: 2s; }
-    .footer #socialLinks #socialList .fa:hover {
-      color: gray; }
+      transition: 1.5s; }
+    .footer #socialLinks .fa:hover {
+      color: white !important; }
   .footer #copyright {
     top: 20px; }
   .footer #contact {
     top: 40px; }
-  .footer li {
-    text-align: center;
-    list-style: inside; }
+    .footer #contact #mailLink {
+      color: gray !important;
+      transition: 1.5s; }
+    .footer #contact #mailLink:hover {
+      color: white !important; }
 
 @keyframes bgMove {
   0% {
@@ -169,46 +178,46 @@ body {
   100% {
     background-position-y: 50vh; } }
 
-svg {
+#splashLogo {
   max-width: 88rem;
   width: 100%;
   height: auto;
-  fill: none;
+  fill: white;
   stroke: #010A0A;
-  stroke-width: 3; }
-  svg path {
+  stroke-width: 1; }
+  #splashLogo path {
     stroke-dasharray: 1500;
     stroke-dashoffset: -1500; }
-    svg path:nth-of-type(1) {
-      animation: draw 1000ms 250ms forwards; }
-    svg path:nth-of-type(2) {
-      animation: draw 1000ms 500ms forwards; }
-    svg path:nth-of-type(3) {
-      animation: draw 1000ms 750ms forwards; }
-    svg path:nth-of-type(4) {
-      animation: draw 1000ms 1000ms forwards; }
-    svg path:nth-of-type(5) {
-      animation: draw 1000ms 1250ms forwards; }
-    svg path:nth-of-type(6) {
-      animation: draw 1000ms 1500ms forwards; }
-    svg path:nth-of-type(7) {
-      animation: draw 1000ms 1750ms forwards; }
-    svg path:nth-of-type(8) {
-      animation: draw 1000ms 2000ms forwards; }
-    svg path:nth-of-type(9) {
-      animation: draw 1000ms 2250ms forwards; }
-    svg path:nth-of-type(10) {
-      animation: draw 1000ms 2500ms forwards; }
-    svg path:nth-of-type(11) {
-      animation: draw 1000ms 2750ms forwards; }
-    svg path:nth-of-type(12) {
-      animation: draw 1000ms 3000ms forwards; }
-    svg path:nth-of-type(13) {
-      animation: draw 1000ms 3250ms forwards; }
-    svg path:nth-of-type(14) {
-      animation: draw 1000ms 3500ms forwards; }
-    svg path:nth-of-type(15) {
-      animation: draw 1000ms 3750ms forwards; }
+    #splashLogo path:nth-of-type(1) {
+      animation: draw 800ms 250ms forwards; }
+    #splashLogo path:nth-of-type(2) {
+      animation: draw 800ms 500ms forwards; }
+    #splashLogo path:nth-of-type(3) {
+      animation: draw 800ms 750ms forwards; }
+    #splashLogo path:nth-of-type(4) {
+      animation: draw 800ms 1000ms forwards; }
+    #splashLogo path:nth-of-type(5) {
+      animation: draw 800ms 1250ms forwards; }
+    #splashLogo path:nth-of-type(6) {
+      animation: draw 800ms 1500ms forwards; }
+    #splashLogo path:nth-of-type(7) {
+      animation: draw 800ms 1750ms forwards; }
+    #splashLogo path:nth-of-type(8) {
+      animation: draw 800ms 2000ms forwards; }
+    #splashLogo path:nth-of-type(9) {
+      animation: draw 800ms 2250ms forwards; }
+    #splashLogo path:nth-of-type(10) {
+      animation: draw 800ms 2500ms forwards; }
+    #splashLogo path:nth-of-type(11) {
+      animation: draw 800ms 2750ms forwards; }
+    #splashLogo path:nth-of-type(12) {
+      animation: draw 800ms 3000ms forwards; }
+    #splashLogo path:nth-of-type(13) {
+      animation: draw 800ms 3250ms forwards; }
+    #splashLogo path:nth-of-type(14) {
+      animation: draw 800ms 3500ms forwards; }
+    #splashLogo path:nth-of-type(15) {
+      animation: draw 800ms 3750ms forwards; }
 
 @keyframes draw {
   100% {
@@ -218,19 +227,165 @@ svg {
   color: brown; }
 
 #splashTitle {
-  animation-delay: 4s; }
+  animation-delay: 2000ms; }
 
 #splashTitle2 {
-  animation-delay: 5s; }
+  animation-delay: 2300ms; }
 
 #splashTitle3 {
-  animation-delay: 6s; }
+  animation-delay: 4000ms; }
 
 .section {
-  animation-delay: 0.5s; }
+  animation-delay: 200ms; }
 
 .textAnim {
-  animation-delay: 1s; }
+  animation-delay: 500ms; }
 
 .textAnim2 {
-  animation-delay: 1.5s; }
+  animation-delay: 600ms; }
+
+.textAnim3 {
+  animation-delay: 800ms; }
+
+/* Button */
+.tcon {
+  appearance: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  transition: 0.3s;
+  user-select: none;
+  width: 40px;
+  background: transparent;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: transparent; }
+  .tcon > * {
+    display: block; }
+  .tcon:hover, .tcon:focus {
+    outline: none; }
+  .tcon::-moz-focus-inner {
+    border: 0; }
+
+.tcon-menu__lines {
+  display: inline-block;
+  height: 5.71429px;
+  width: 40px;
+  border-radius: 2.85714px;
+  transition: 0.3s;
+  background: black;
+  position: relative; }
+  .tcon-menu__lines::before, .tcon-menu__lines::after {
+    display: inline-block;
+    height: 5.71429px;
+    width: 40px;
+    border-radius: 2.85714px;
+    transition: 0.3s;
+    background: black;
+    content: '';
+    position: absolute;
+    left: 0;
+    transform-origin: 2.85714px center;
+    width: 100%; }
+  .tcon-menu__lines::before {
+    top: 10px; }
+  .tcon-menu__lines::after {
+    top: -10px; }
+  .tcon-transform .tcon-menu__lines {
+    transform: scale3d(0.8, 0.8, 0.8); }
+
+.tcon-menu--xbutterfly {
+  width: auto; }
+  .tcon-menu--xbutterfly .tcon-menu__lines::before, .tcon-menu--xbutterfly .tcon-menu__lines::after {
+    transform-origin: 50% 50%;
+    transition: top .3s .6s ease, transform .3s ease; }
+  .tcon-menu--xbutterfly.tcon-transform .tcon-menu__lines {
+    background: transparent; }
+    .tcon-menu--xbutterfly.tcon-transform .tcon-menu__lines::before, .tcon-menu--xbutterfly.tcon-transform .tcon-menu__lines::after {
+      top: 0;
+      transition: top .3s ease, transform .3s .5s ease;
+      width: 40px; }
+    .tcon-menu--xbutterfly.tcon-transform .tcon-menu__lines::before {
+      transform: rotate3d(0, 0, 1, 45deg); }
+    .tcon-menu--xbutterfly.tcon-transform .tcon-menu__lines::after {
+      transform: rotate3d(0, 0, 1, -45deg); }
+
+.tcon-visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px; }
+  .tcon-visuallyhidden:active, .tcon-visuallyhidden:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto; }
+
+@keyframes chevron-pulse {
+  0% {
+    opacity: 0; }
+  40% {
+    opacity: 1; }
+  80% {
+    opacity: 0; }
+  100% {
+    opacity: 0; } }
+
+.tcon-svgchevron {
+  height: 40px;
+  width: 40px; }
+
+.tcon-svgchevron path {
+  animation: chevron-pulse 3s infinite cubic-bezier(0.4, 0, 0.2, 1);
+  fill: transparent;
+  stroke: black;
+  stroke-width: 1px; }
+
+.tcon-svgchevron path.a1 {
+  animation-delay: 0s; }
+
+.tcon-svgchevron path.a2 {
+  animation-delay: -0.5s; }
+
+.tcon-svgchevron path.a3 {
+  animation-delay: -1s; }
+
+.animatedHover {
+  animation-play-state: paused; }
+
+.animatedHover:hover {
+  animation-play-state: running; }
+
+@media only screen and (max-width: 991px) {
+  body {
+    background: none; }
+    body h1 {
+      font-size: 1.5em !important; }
+    body h2 {
+      font-size: 1em; }
+    body h3 {
+      font-size: 1.05em; }
+  .content {
+    border: none !important;
+    border-radius: 0 !important; }
+    .content .imgContainer {
+      height: 100px !important;
+      background-image: none !important; }
+      .content .imgContainer img {
+        display: block !important;
+        margin: 0 auto !important;
+        position: static !important;
+        max-height: 100px !important; }
+    .content .headline {
+      padding-left: 5vw !important; }
+  .downArrow {
+    display: none; } }

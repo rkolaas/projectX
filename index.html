@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>robertkolaas</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- links -->
+        <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
+        
+        <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+        <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Roboto+Slab" />
+        <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Roboto" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="/assets/css/stylesheet.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+    </head>
+    <body>
+        <!-- Navigation bar -->
+        <div class="col-sm-12 navbar-fixed-top" id="nav" role="navigation" >
+                <div class="hidden-xs col-sm-9 col-md-3" id="title">
+                    <a id="titleLink" href="#" style="color:white;"><p>Robert Kolaas</p></a>
+                </div>
+                <div class="hidden-xs hidden-sm col-md-7" id="nav2">
+                </div>
+                <div class="col-sm-12 col-sm-3 col-md-2" id="links">  
+                    <!-- imported nav.html -->   
+                </div>
+        </div>
+        <!-- sections -->
+        <div class="container-fluid" id="section">
+            <div class="jumbotron jumbotron-fluid" id="home">
+            </div>
+            <div class="row section wow bounceInRight" id="page1">
+                <div class="col-sm col-md-2 col-lg-2">
+                </div>
+                <div class="col-sm-12 col-md-8 col-lg-8 content" id="section1">
+                </div>
+                <div class="col-sm col-md-2 col-lg-2">
+                </div>
+            </div>
+            <!-- Section 2 -->
+            <div class="row section wow bounceInLeft" id="page2">
+                <div class="col-sm col-md-2 col-lg-2">
+                </div>
+                <div class="col-sm-12 col-md-8 col-lg-8 content" id="section2">
+                </div>
+                <div class="col-sm col-md-2 col-lg-2">
+                </div>
+            </div>
+            <!-- Section 3 -->
+            <div class="row section wow bounceInRight" id="page3">
+                <div class="col-sm col-md-2 col-lg-2">
+                </div>
+                <div class="col-sm-12 col-md-8 col-lg-8 content" id="section3">
+                </div>
+                <div class="col-sm col-md-2 col-lg-2">
+                </div>
+            </div>
+            <!-- Section 4 -->
+            <div class="row section wow bounceInLeft" id="page4">
+                <div class="col-sm col-md-2 col-lg-2">
+                </div>
+                <div class="col-sm-12 col-md-8 col-lg-8" id="section4">
+                </div>
+                <div class="col-sm col-md-2 col-lg-2">
+                </div>
+            </div>
+            <!-- footer -->
+            <div class="row footer wow bounceInUp" id= "footer">
+                <div class="col-sm-3" id="socialLinks">  
+                    <!-- imported socialLinks.html -->   
+                </div>
+                <div class="col-sm-6" id="copyright">  
+                    Copyright &copy; 2018 - robertkolaas.no            
+                </div>
+                <div class="col-sm-3" id="contact">
+                </div>
+            </div>
+        </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+    <script> 
+        $(function(){
+            $("#links").load("/assets/includes/nav.html");
+            $("#socialLinks").load("/assets/includes/socialLinks.html");
+            $("#contact").load("/assets/includes/contact.html");
+            $("#home").load("/assets/includes/splash.html");
+            $("#section1").load("/assets/includes/section1.html");
+            $("#section2").load("/assets/includes/section2.html");
+            $("#section3").load("/assets/includes/section3.html");                
+        });
+    </script> 
+    <script src="assets/js/transformicons.js"></script>
+    <script>transformicons.add('.tcon')</script>
+    
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script>
+    new WOW().init();
+    </script>    
+</body>
+</html>

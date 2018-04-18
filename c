@@ -1,0 +1,137 @@
+[33mcommit ca95a75eea6c3ae2e46d649a451fa72a10810c40[m[33m ([m[1;36mHEAD -> [m[1;32mpersonalWebsitev1.0[m[33m)[m
+Author: Robert Kolaas <me@robertkolaas.no>
+Date:   Thu Apr 12 10:29:35 2018 +0200
+
+    still testing
+
+[33mcommit 58c7727bccedd062082c47921d5e926731a30bde[m[33m ([m[1;32mmaster[m[33m)[m
+Author: Robert Kolaas <me@robertkolaas.no>
+Date:   Thu Apr 12 10:18:59 2018 +0200
+
+    testing push
+
+[33mcommit c29a410ec0c186d00de5b2799aaa7fcced99bed5[m
+Author: Robert Kolaas <me@robertkolaas.no>
+Date:   Wed Apr 11 22:30:12 2018 +0200
+
+    started on layput
+
+[33mcommit 098890195e4f51fb2d7226448ab713513f5426c2[m
+Author: Robert Kolaas <me@robertkolaas.no>
+Date:   Wed Apr 11 21:05:13 2018 +0200
+
+    new project
+
+[33mcommit e199e921152db7f8401756604483532c3a386277[m
+Author: Robert Kolaas <me@robertkolaas.no>
+Date:   Wed Apr 11 20:17:12 2018 +0200
+
+    starting from scratch
+
+[33mcommit 55943935415f56d406099fc7ff68102b0e21ab9e[m
+Author: Robert Kolaas <me@robertkolaas.no>
+Date:   Wed Mar 14 11:08:48 2018 +0100
+
+    redesign inc
+
+[33mcommit 2065cf9aca4d3d5e0e86f4bf58e2e03faa750a3f[m
+Author: Robert Kolaas <me@robertkolaas.no>
+Date:   Wed Mar 14 00:50:33 2018 +0100
+
+    new bg
+
+[33mcommit d93a641c9fcadbfd7e75710ad6a8b1beb4e446dc[m
+Author: Robert Kolaas <me@robertkolaas.no>
+Date:   Sun Mar 11 10:50:22 2018 +0100
+
+    added jQuery
+
+[33mcommit 52f9e3e5c020078f4cd4e483b0dc5805cdc099f9[m
+Author: Robert Kolaas <me@robertkolaas.no>
+Date:   Thu Mar 8 20:56:31 2018 +0100
+
+    redesigned the website
+
+[33mcommit 382601ac209293f402f0dcf4d330b53c31ce7c9c[m
+Author: Robert Kolaas <me@robertkolaas.no>
+Date:   Mon Mar 5 14:11:23 2018 +0100
+
+    redesigned site
+
+[33mcommit 40689e96db746391f8dbd599eb67778aeb3800ef[m
+Author: Robert Kolaas <me@robertkolaas.no>
+Date:   Tue Feb 20 23:39:10 2018 +0100
+
+    tweaked on the cv design
+
+[33mcommit ff09033cef9fc59711af21deb2521199082e37b4[m
+Author: Robert Kolaas <me@robertkolaas.no>
+Date:   Tue Feb 20 15:49:58 2018 +0100
+
+    added text to cv.php
+
+[33mcommit 103de0e2ec25fdd277c0ee1d28b7485c23c57a3c[m
+Author: Robert Kolaas <me@robertkolaas.no>
+Date:   Tue Feb 20 15:09:20 2018 +0100
+
+    added new pages, setting up cv.php with layout
+
+[33mcommit 33cee7bfac81e7b484d75aa8b21a941d753d15f1[m
+Author: Robert Kolaas <me@robertkolaas.no>
+Date:   Tue Feb 13 17:32:43 2018 +0100
+
+    worked more on the design, adjusting sizes and positioning
+
+[33mcommit e0ef2e81fd83c05f7f6ab6607550ad6ac08a3001[m
+Author: Robert Kolaas <me@robertkolaas.no>
+Date:   Tue Feb 13 14:24:22 2018 +0100
+
+    starting fresh
+
+[33mcommit 632315f18b9acee3c700c16ad90400baf570f740[m
+Author: Robert Kolaas <me@robertkolaas.no>
+Date:   Tue Feb 13 01:08:46 2018 +0100
+
+    further work on design, added gfx-folder
+
+[33mcommit 99d250929e0e2fec8261fbabc33dcda21f347d0c[m
+Author: Robert Kolaas <me@robertkolaas.no>
+Date:   Tue Feb 13 00:15:37 2018 +0100
+
+    adjusted nac height
+
+[33mcommit 1c5d478efbdfd7daf7e887a0430a17679e71c7a4[m
+Author: Robert Kolaas <me@robertkolaas.no>
+Date:   Fri Feb 9 14:17:12 2018 +0100
+
+    updated skeleton and set up the grid sections, also colorized
+
+[33mcommit 621c1190bd206a38313f81fb026772d180115b0f[m
+Author: Robert Kolaas <me@robertkolaas.no>
+Date:   Fri Feb 9 10:42:37 2018 +0100
+
+    fixed problem with css-grid
+
+[33mcommit a38769dde203bc31e86a4de34d4191776dc1e883[m
+Author: Robert Kolaas <me@robertkolaas.no>
+Date:   Fri Feb 9 01:25:52 2018 +0100
+
+    added skeleto to site, trouble with getting grid up and going
+
+[33mcommit d3a56fba12e6263e90229f77a01a9effd38deead[m
+Author: Robert Kolaas <me@robertkolaas.no>
+Date:   Thu Feb 8 23:44:43 2018 +0100
+
+    added styles.scss
+
+[33mcommit 315036a8b3f96e51812fa676efbd4a5035dbc1ba[m
+Author: Robert Kolaas <me@robertkolaas.no>
+Date:   Thu Feb 8 23:37:32 2018 +0100
+
+    installed node.js, npm and edited package.json
+
+[33mcommit 8c39ee8a60638338f67fd12434e03e927135334c[m
+Author: Robert Kolaas <me@robertkolaas.no>
+Date:   Thu Feb 8 20:53:16 2018 +0100
+
+    first commit
