@@ -18,7 +18,7 @@ body {
   background-image: url(/assets/gfx/background1.png), url(/assets/gfx/background21.png);
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-position-y: 50vh, 50vh;
+  background-position-y: 30vh, 30vh;
   background-position-x: 4vw, 85vw;
   animation: bgMove 4s infinite;
   overflow-x: hidden; }
@@ -107,8 +107,15 @@ a {
       padding: 0;
       background-image: url(/assets/gfx/pattern2.png);
       background-repeat: repeat-x;
-      height: 200px;
+      height: 210px;
       width: 100%; }
+      .section .content .imgContainer .laptopAnim {
+        -webkit-transition: opacity 1s 5s ease-in ease-out;
+        -moz-transition: opacity 1s 5s ease-in ease-out;
+        -o-transition: opacity 1s 5s ease-in ease-out;
+        transition: opacity 1s 5s ease-in ease-out; }
+      .section .content .imgContainer .laptopAnim:hover {
+        opacity: 0; }
       .section .content .imgContainer img {
         position: absolute;
         right: 0;
@@ -119,16 +126,15 @@ a {
     .section .content .headline {
       padding-left: 2vw;
       font-family: 'Roboto Slab';
-      /*background-image: url(/assets/gfx/bgPattern.png);*/
       background-color: #010A0A;
       color: white; }
     .section .content .sub-headline {
       font-family: 'Roboto';
       font-size: 1.5em;
-      padding-top: 3vh;
-      transition: 2s; }
-    .section .content .sub-headline:hover {
-      color: black; }
+      padding-top: 5vh;
+      transition: 2s;
+      color: white;
+      background-color: black; }
     .section .content .plainText {
       font-family: 'Roboto';
       padding-top: 3vh;
@@ -172,11 +178,11 @@ a {
 
 @keyframes bgMove {
   0% {
-    background-position-y: 50vh; }
+    background-position-y: 30vh; }
   50% {
-    background-position-y: 48vh; }
+    background-position-y: 28vh; }
   100% {
-    background-position-y: 50vh; } }
+    background-position-y: 30vh; } }
 
 #splashLogo {
   max-width: 88rem;
@@ -380,6 +386,8 @@ a {
     .content .imgContainer {
       height: 100px !important;
       background-image: none !important; }
+      .content .imgContainer .smHide {
+        display: none !important; }
       .content .imgContainer img {
         display: block !important;
         margin: 0 auto !important;
