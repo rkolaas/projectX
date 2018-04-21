@@ -1,65 +1,35 @@
 /* --------- VARIABLES --------- */
-/*$navTopMargin: 1.5vh;
-$testColor1: #E1EABF;
-$testColor2: #FFFEE8;
-$testColor3: #F6F6DA;
-$testColor4: #F4F0D7;
-$borderColor: #C7C4A3;
-$HeadlineColor: #316876;
-$HeadlineColor2: #319A76;
-$transformColor: black;*/
-/* Test */
+/* general elements */
 body {
   font-family: 'Roboto', serif !important;
   padding: 0;
   margin-top: 15vh !important;
   color: gray !important;
   background-color: white;
-  /*background-image: url(/assets/gfx/background1.png), url(/assets/gfx/background21.png);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position-y: 30vh, 30vh;
-    background-position-x: 4vw, 85vw;
-    animation: bgMove 4s infinite;*/
   overflow-x: hidden; }
 
+a {
+  color: white !important;
+  text-decoration: none !important; }
+
+/* arrow btn */
 .downArrow img {
   display: block;
   margin: 0 auto;
   width: 40px;
   height: 40px; }
 
-a {
-  color: white !important;
-  text-decoration: none !important; }
+.animatedHover {
+  animation-play-state: paused; }
+
+.animatedHover:hover {
+  animation-play-state: running; }
 
 /* --------- NAV --------- */
 #nav {
   color: white;
   background: #63aab8;
-  height: 8vh;
-  /*.nav>li>a,
-    .nav>li>a:visited {
-        background: none; 
-        color: $HeadlineColor;
-        font-size: 1.5em;
-        transition: 2s;
-    }
-    .nav>li>a.active,
-    .nav>li>a:hover,
-    .nav>li>a:focus {
-        color: $transformColor;
-    }
-    .dropdown-menu>li>a {
-        color: $HeadlineColor;
-        transition: 1s;
-    }
-    .dropdown-menu>li>a:active,
-    .dropdown-menu>li>a:hover,
-    .dropdown-menu>li>a:focus {
-        color: $elementColor !important;
-        background-color: $testColor4;
-    }*/ }
+  height: 8vh; }
   #nav #nav2 {
     top: 1.5vh; }
   #nav #title {
@@ -75,8 +45,6 @@ a {
     top: 3vh; }
   #nav #menu {
     background-color: #63aab8; }
-    #nav #menu .divider {
-      background-color: white; }
   #nav #menuBtn {
     color: white !important;
     font-size: 2em;
@@ -133,13 +101,15 @@ a {
     top: 10vh;
     padding: 0vh;
     bottom: 10vh;
-    overflow: hidden; }
+    overflow: hidden;
+    /* text types */ }
     .section .content .imgContainer {
       padding: 0;
       background-image: url(/assets/gfx/pattern3.png);
       background-repeat: repeat-x;
       height: 210px;
-      width: 100%; }
+      width: 100%;
+      /* laptop img animation */ }
       .section .content .imgContainer .laptopAnim {
         -webkit-transition: opacity 1s 5s ease-in ease-out;
         -moz-transition: opacity 1s 5s ease-in ease-out;
@@ -208,6 +178,7 @@ a {
     .footer #contact #mailLink:hover {
       color: white !important; }
 
+/* Splash page animation */
 #splashLogo {
   padding-top: 15vh;
   display: block;
@@ -256,6 +227,7 @@ a {
   100% {
     stroke-dashoffset: 0; } }
 
+/* Splash page titles */
 #splashTitle {
   animation-delay: 500ms; }
 
@@ -272,6 +244,7 @@ a {
   #splashTitle3 #sT3 {
     color: #61B864; }
 
+/* animation speed */
 .section {
   animation-delay: 200ms; }
 
@@ -284,124 +257,7 @@ a {
 .textAnim3 {
   animation-delay: 1400ms; }
 
-/* Button */
-.tcon {
-  appearance: none;
-  border: none;
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 40px;
-  transition: 0.3s;
-  user-select: none;
-  width: 40px;
-  background: transparent;
-  outline: none;
-  -webkit-tap-highlight-color: transparent;
-  -webkit-tap-highlight-color: transparent; }
-  .tcon > * {
-    display: block; }
-  .tcon:hover, .tcon:focus {
-    outline: none; }
-  .tcon::-moz-focus-inner {
-    border: 0; }
-
-.tcon-menu__lines {
-  display: inline-block;
-  height: 5.71429px;
-  width: 40px;
-  border-radius: 2.85714px;
-  transition: 0.3s;
-  background: black;
-  position: relative; }
-  .tcon-menu__lines::before, .tcon-menu__lines::after {
-    display: inline-block;
-    height: 5.71429px;
-    width: 40px;
-    border-radius: 2.85714px;
-    transition: 0.3s;
-    background: black;
-    content: '';
-    position: absolute;
-    left: 0;
-    transform-origin: 2.85714px center;
-    width: 100%; }
-  .tcon-menu__lines::before {
-    top: 10px; }
-  .tcon-menu__lines::after {
-    top: -10px; }
-  .tcon-transform .tcon-menu__lines {
-    transform: scale3d(0.8, 0.8, 0.8); }
-
-.tcon-menu--xbutterfly {
-  width: auto; }
-  .tcon-menu--xbutterfly .tcon-menu__lines::before, .tcon-menu--xbutterfly .tcon-menu__lines::after {
-    transform-origin: 50% 50%;
-    transition: top .3s .6s ease, transform .3s ease; }
-  .tcon-menu--xbutterfly.tcon-transform .tcon-menu__lines {
-    background: transparent; }
-    .tcon-menu--xbutterfly.tcon-transform .tcon-menu__lines::before, .tcon-menu--xbutterfly.tcon-transform .tcon-menu__lines::after {
-      top: 0;
-      transition: top .3s ease, transform .3s .5s ease;
-      width: 40px; }
-    .tcon-menu--xbutterfly.tcon-transform .tcon-menu__lines::before {
-      transform: rotate3d(0, 0, 1, 45deg); }
-    .tcon-menu--xbutterfly.tcon-transform .tcon-menu__lines::after {
-      transform: rotate3d(0, 0, 1, -45deg); }
-
-.tcon-visuallyhidden {
-  border: 0;
-  clip: rect(0 0 0 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 1px; }
-  .tcon-visuallyhidden:active, .tcon-visuallyhidden:focus {
-    clip: auto;
-    height: auto;
-    margin: 0;
-    overflow: visible;
-    position: static;
-    width: auto; }
-
-@keyframes chevron-pulse {
-  0% {
-    opacity: 0; }
-  40% {
-    opacity: 1; }
-  80% {
-    opacity: 0; }
-  100% {
-    opacity: 0; } }
-
-.tcon-svgchevron {
-  height: 40px;
-  width: 40px; }
-
-.tcon-svgchevron path {
-  animation: chevron-pulse 3s infinite cubic-bezier(0.4, 0, 0.2, 1);
-  fill: transparent;
-  stroke: black;
-  stroke-width: 1px; }
-
-.tcon-svgchevron path.a1 {
-  animation-delay: 0s; }
-
-.tcon-svgchevron path.a2 {
-  animation-delay: -0.5s; }
-
-.tcon-svgchevron path.a3 {
-  animation-delay: -1s; }
-
-.animatedHover {
-  animation-play-state: paused; }
-
-.animatedHover:hover {
-  animation-play-state: running; }
-
+/* mobile views */
 @media only screen and (max-width: 991px) {
   body {
     background: none; }
