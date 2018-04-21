@@ -20,6 +20,7 @@ $HeadlineColor: white;
 $HeadlineColor2: gray;
 $transformColor: white;
 $transformColor2: black;
+$elementColor: #63aab8;
 
 body {
     font-family: 'Roboto', serif !important;
@@ -27,12 +28,12 @@ body {
     margin-top: 15vh !important;
     color: $HeadlineColor2 !important;
     background-color: white; 
-    background-image: url(/assets/gfx/background1.png), url(/assets/gfx/background21.png);
+    /*background-image: url(/assets/gfx/background1.png), url(/assets/gfx/background21.png);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position-y: 30vh, 30vh;
     background-position-x: 4vw, 85vw;
-    animation: bgMove 4s infinite;
+    animation: bgMove 4s infinite;*/
     overflow-x: hidden;
 }
 .downArrow {
@@ -52,9 +53,9 @@ a {
 /* --------- NAV --------- */
 #nav {
     color: $HeadlineColor;
-    background: $testColor1; 
+    background: $elementColor; 
     height: 8vh;
-    .nav>li>a,
+    /*.nav>li>a,
     .nav>li>a:visited {
         background: none; 
         color: $HeadlineColor;
@@ -73,10 +74,11 @@ a {
     .dropdown-menu>li>a:active,
     .dropdown-menu>li>a:hover,
     .dropdown-menu>li>a:focus {
-        color: black;
+        color: $elementColor !important;
         background-color: $testColor4;
-    }
+    }*/
     
+
     #nav2 {
         top: $navTopMargin;
     }
@@ -86,19 +88,44 @@ a {
         transition: 2s;
         #titleLink {
             text-decoration: none;
+            font-family: 'Quicksand' !important;
         }
     }
     #title:hover {
         color: $transformColor;     
     }
     #links {
-        top: 2vh;
+        top: 3vh;
     }
     #menu{
-        background-color: $testColor1;
-        /*background-image: url(/assets/gfx/bgPattern.png);*/
+        background-color: $elementColor;
         .divider {
             background-color: $testColor4;
+        }
+    }
+    #menuBtn {
+        color: $testColor4 !important;
+        font-size: 2em;
+        font-family: 'Quicksand' !important;
+        text-decoration: none;
+        outline: none;
+    }
+    .collapse {
+        .list-group{
+            border: none;
+            .list-group-item{
+                background-color: $elementColor;
+                border: none;
+            }
+            .list-group-item:hover{
+                background-color: $testColor4;
+                color: black;
+                border: $elementColor 1px solid;
+                a {
+                    color: $elementColor !important;
+
+                }
+            }
         }
     }
 }
@@ -108,6 +135,12 @@ a {
     border: none;
     background-color: transparent !important;
     text-align: center;
+    #splashLogoAlt {
+        h1 {
+            font-size: 4em !important;
+            font-family: 'Quicksand' !important;
+        }
+    }
     h1 {
         color: $testColor1 !important;
     }
@@ -122,7 +155,21 @@ a {
     margin-top: 18vh !important;
     min-height: 20vh;
     height: auto;
-    padding-top: 8vh;
+    padding-top: 2vh;
+    padding-bottom: 8vh;
+
+    #section4 {
+        height: 50vh;
+        margin-top: 20vh;
+        text-align: center;
+        color: black; 
+        span {
+            display: inline-block;
+        }
+        a {
+            color: $HeadlineColor2 !important;
+        }
+    }
     
     
     .content {
@@ -130,15 +177,12 @@ a {
         max-height: auto;
         overflow: auto;
         top: 10vh;
-        border-radius: 5px;
-        border: $borderColor 1.5px solid;
-        border-top: none;
         padding: 0vh;
         bottom: 10vh;
         overflow:hidden;
         .imgContainer {
             padding: 0;
-            background-image: url(/assets/gfx/pattern2.png);
+            background-image: url(/assets/gfx/pattern3.png);
             background-repeat: repeat-x;
             height: 210px;
             width: 100%;
@@ -163,7 +207,7 @@ a {
         .headline {
             padding-left: 2vw;
             font-family: 'Roboto Slab';
-            background-color: $testColor1;
+            background-color: $elementColor;
             color: $HeadlineColor;
         }
         .sub-headline {
@@ -172,7 +216,7 @@ a {
             padding-top: 5vh;
             transition: 2s;
             color: white;
-            background-color: black;
+            background-color: $elementColor;
         }
         .plainText {
             font-family: 'Roboto';
@@ -195,28 +239,29 @@ a {
 /* --------- FOOTER --------- */
 .footer {
     color: $HeadlineColor;
-    height: 250px;
+    height:20vh;
+    width: 100vw;
     text-align: center;
-    background: $testColor1;
+    background: $elementColor;
     /*background-image: url(/assets/gfx/bgPattern.png);*/
 
     #socialLinks {
-        top: 40px;
+        top: 5vh;
             
         .fa {
             display: inline-block;
-            color: gray !important;
+            color: $HeadlineColor !important;
             padding-left: 10px;
             width: 50px;
             text-align: center;
             transition: 1.5s;
             }
         .fa:hover {
-            color: $HeadlineColor !important;
+            color: $transformColor2 !important;
         }
     }
     #copyright {
-        top: 20px;
+        top: 10vh;
     }
     #contact {
         top: 40px;
@@ -230,25 +275,16 @@ a {
     }
     
 }
-
-@keyframes bgMove {
-	0% {
-		background-position-y: 30vh;
-	}
-	50% {
-		background-position-y: 28vh;
-	}
-	100% {
-		background-position-y: 30vh;
-	}
-}
 #splashLogo {
-    max-width: 88rem;
+    padding-top: 15vh;
+    display: block;
+    margin: auto;
+    max-width: 100rem;
     width: 100%;
     height: auto;
-    fill: white;
-    stroke: $testColor1;
-    stroke-width: 1;
+    fill: #E0DDCF;
+    stroke: $elementColor;
+    stroke-width: 10;
     
     path {
         stroke-dasharray: 1500;
@@ -257,7 +293,7 @@ a {
         @for $i from 1 through 15 {
             
             &:nth-of-type(#{$i}) {
-                animation: draw 800ms #{$i * 250}ms forwards;
+                animation: draw 4000ms #{$i * 250}ms forwards;
             }
             
         }
@@ -274,18 +310,24 @@ a {
 	
 }
 
-.testClass {
-    color: brown;
-}
-
 #splashTitle {
-    animation-delay: 2000ms;
+    animation-delay: 500ms;
 }
 #splashTitle2 {
-    animation-delay: 2300ms;
+    animation-delay: 700ms;
 }
 #splashTitle3 {
-    animation-delay: 4000ms;
+    font-weight: bold;
+    animation-delay: 1500ms;
+    #sT1 {
+        color: #F3C545;
+    }
+    #sT2 {
+        color: #638FB8;
+    }
+    #sT3 {
+        color: #61B864;
+    }
 }
 .section {
     animation-delay: 200ms;
@@ -297,7 +339,7 @@ a {
     animation-delay: 600ms;
 }
 .textAnim3 {
-    animation-delay: 800ms;
+    animation-delay: 1400ms;
 }
 
 /* Button */
@@ -481,6 +523,16 @@ $tcon-svgchevron-timing: 3s !default;
             font-size: 1.05em;
         }
     }
+    #links {
+        top: 0.5vh !important;
+        position: absolute;
+        left:0;
+        padding-left: 0vh;
+    }
+    .section {  
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+    }
     .content {
         border: none !important;
         border-radius: 0 !important;
@@ -501,10 +553,37 @@ $tcon-svgchevron-timing: 3s !default;
         .headline {
             padding-left: 5vw !important;
         }
+        .plainText{
+            text-align: center !important;
+        }
         
     }
     .downArrow {
         display: none;
     }
     
+}
+
+/* deactivate animate.css on mobile */
+@media only screen and (max-width : 768px) {
+	.animated {
+		/*CSS transitions*/
+		-o-transition-property: none !important;
+		-moz-transition-property: none !important;
+		-ms-transition-property: none !important;
+		-webkit-transition-property: none !important;
+		transition-property: none !important;
+		/*CSS transforms*/
+		-o-transform: none !important;
+		-moz-transform: none !important;
+		-ms-transform: none !important;
+		-webkit-transform: none !important;
+		transform: none !important;
+		/*CSS animations*/
+		-webkit-animation: none !important;
+		-moz-animation: none !important;
+		-o-animation: none !important;
+		-ms-animation: none !important;
+		animation: none !important;
+	}
 }

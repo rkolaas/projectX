@@ -5,6 +5,8 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name=”description” content="Navnet er Robert Kolås, en nysgjerrig og kreativ IT-entusiast som er sulten på nye utfordringer.
+        God erfaring med 'front end'-utvikling og veldig ivrig på å lære mer om 'back-end'-utvikling, også en ruvende interesse for IT-teknologi og informasjonsystemer generelt.">
         <!-- links -->
         <link rel="stylesheet"
         href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
@@ -18,12 +20,13 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <!-- Latest compiled and minified CSS -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        
+        <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
     </head>
     <body>
         <!-- Navigation bar -->
         <div class="col-sm-12 navbar-fixed-top" id="nav" role="navigation" >
-                <div class="hidden-xs col-sm-9 col-md-3" id="title">
+                <div class="hidden-xs hidden-sm col-sm-9 col-md-3" id="title">
                     <a id="titleLink" href="#" style="color:white;"><p>Robert Kolaas</p></a>
                 </div>
                 <div class="hidden-xs hidden-sm col-md-7" id="nav2">
@@ -73,16 +76,15 @@
             </div>
             <!-- footer -->
             <div class="row footer wow bounceInUp" id= "footer">
-                <div class="col-sm-3" id="socialLinks">  
+                <div class="col-sm-12 col-md-5" id="socialLinks">  
                     <!-- imported socialLinks.html -->   
                 </div>
-                <div class="col-sm-6" id="copyright">  
+                <div class="col-sm-12 col-md-2" id="copyright">  
                     Copyright &copy; 2018 - robertkolaas.no            
-                </div>
-                <div class="col-sm-3" id="contact">
                 </div>
             </div>
         </div>
+        <!-- Scripts -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     
@@ -94,7 +96,8 @@
             $("#home").load("/assets/includes/splash.html");
             $("#section1").load("/assets/includes/section1.html");
             $("#section2").load("/assets/includes/section2.html");
-            $("#section3").load("/assets/includes/section3.html");                
+            $("#section3").load("/assets/includes/section3.html");  
+            $("#section4").load("/assets/includes/section4.html");              
         });
     </script> 
     <script src="assets/js/transformicons.js"></script>
@@ -102,6 +105,7 @@
     
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="assets/js/wow.min.js"></script>
+    <script src="assets/anijs-min.js"></script>
     <script>
     new WOW().init();
     </script>    

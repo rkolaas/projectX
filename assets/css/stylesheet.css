@@ -15,12 +15,12 @@ body {
   margin-top: 15vh !important;
   color: gray !important;
   background-color: white;
-  background-image: url(/assets/gfx/background1.png), url(/assets/gfx/background21.png);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position-y: 30vh, 30vh;
-  background-position-x: 4vw, 85vw;
-  animation: bgMove 4s infinite;
+  /*background-image: url(/assets/gfx/background1.png), url(/assets/gfx/background21.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position-y: 30vh, 30vh;
+    background-position-x: 4vw, 85vw;
+    animation: bgMove 4s infinite;*/
   overflow-x: hidden; }
 
 .downArrow img {
@@ -36,26 +36,30 @@ a {
 /* --------- NAV --------- */
 #nav {
   color: white;
-  background: #010A0A;
-  height: 8vh; }
-  #nav .nav > li > a,
-  #nav .nav > li > a:visited {
-    background: none;
-    color: white;
-    font-size: 1.5em;
-    transition: 2s; }
-  #nav .nav > li > a.active,
-  #nav .nav > li > a:hover,
-  #nav .nav > li > a:focus {
-    color: white; }
-  #nav .dropdown-menu > li > a {
-    color: white;
-    transition: 1s; }
-  #nav .dropdown-menu > li > a:active,
-  #nav .dropdown-menu > li > a:hover,
-  #nav .dropdown-menu > li > a:focus {
-    color: black;
-    background-color: white; }
+  background: #63aab8;
+  height: 8vh;
+  /*.nav>li>a,
+    .nav>li>a:visited {
+        background: none; 
+        color: $HeadlineColor;
+        font-size: 1.5em;
+        transition: 2s;
+    }
+    .nav>li>a.active,
+    .nav>li>a:hover,
+    .nav>li>a:focus {
+        color: $transformColor;
+    }
+    .dropdown-menu>li>a {
+        color: $HeadlineColor;
+        transition: 1s;
+    }
+    .dropdown-menu>li>a:active,
+    .dropdown-menu>li>a:hover,
+    .dropdown-menu>li>a:focus {
+        color: $elementColor !important;
+        background-color: $testColor4;
+    }*/ }
   #nav #nav2 {
     top: 1.5vh; }
   #nav #title {
@@ -63,16 +67,33 @@ a {
     font-size: 1.5em;
     transition: 2s; }
     #nav #title #titleLink {
-      text-decoration: none; }
+      text-decoration: none;
+      font-family: 'Quicksand' !important; }
   #nav #title:hover {
     color: white; }
   #nav #links {
-    top: 2vh; }
+    top: 3vh; }
   #nav #menu {
-    background-color: #010A0A;
-    /*background-image: url(/assets/gfx/bgPattern.png);*/ }
+    background-color: #63aab8; }
     #nav #menu .divider {
       background-color: white; }
+  #nav #menuBtn {
+    color: white !important;
+    font-size: 2em;
+    font-family: 'Quicksand' !important;
+    text-decoration: none;
+    outline: none; }
+  #nav .collapse .list-group {
+    border: none; }
+    #nav .collapse .list-group .list-group-item {
+      background-color: #63aab8;
+      border: none; }
+    #nav .collapse .list-group .list-group-item:hover {
+      background-color: white;
+      color: black;
+      border: #63aab8 1px solid; }
+      #nav .collapse .list-group .list-group-item:hover a {
+        color: #63aab8 !important; }
 
 /* --------- SECTIONS --------- */
 .jumbotron {
@@ -80,6 +101,9 @@ a {
   border: none;
   background-color: transparent !important;
   text-align: center; }
+  .jumbotron #splashLogoAlt h1 {
+    font-size: 4em !important;
+    font-family: 'Quicksand' !important; }
   .jumbotron h1 {
     color: #010A0A !important; }
   .jumbotron h2 {
@@ -91,21 +115,28 @@ a {
   margin-top: 18vh !important;
   min-height: 20vh;
   height: auto;
-  padding-top: 8vh; }
+  padding-top: 2vh;
+  padding-bottom: 8vh; }
+  .section #section4 {
+    height: 50vh;
+    margin-top: 20vh;
+    text-align: center;
+    color: black; }
+    .section #section4 span {
+      display: inline-block; }
+    .section #section4 a {
+      color: gray !important; }
   .section .content {
     background: white;
     max-height: auto;
     overflow: auto;
     top: 10vh;
-    border-radius: 5px;
-    border: black 1.5px solid;
-    border-top: none;
     padding: 0vh;
     bottom: 10vh;
     overflow: hidden; }
     .section .content .imgContainer {
       padding: 0;
-      background-image: url(/assets/gfx/pattern2.png);
+      background-image: url(/assets/gfx/pattern3.png);
       background-repeat: repeat-x;
       height: 210px;
       width: 100%; }
@@ -126,7 +157,7 @@ a {
     .section .content .headline {
       padding-left: 2vw;
       font-family: 'Roboto Slab';
-      background-color: #010A0A;
+      background-color: #63aab8;
       color: white; }
     .section .content .sub-headline {
       font-family: 'Roboto';
@@ -134,7 +165,7 @@ a {
       padding-top: 5vh;
       transition: 2s;
       color: white;
-      background-color: black; }
+      background-color: #63aab8; }
     .section .content .plainText {
       font-family: 'Roboto';
       padding-top: 3vh;
@@ -151,23 +182,24 @@ a {
 /* --------- FOOTER --------- */
 .footer {
   color: white;
-  height: 250px;
+  height: 20vh;
+  width: 100vw;
   text-align: center;
-  background: #010A0A;
+  background: #63aab8;
   /*background-image: url(/assets/gfx/bgPattern.png);*/ }
   .footer #socialLinks {
-    top: 40px; }
+    top: 5vh; }
     .footer #socialLinks .fa {
       display: inline-block;
-      color: gray !important;
+      color: white !important;
       padding-left: 10px;
       width: 50px;
       text-align: center;
       transition: 1.5s; }
     .footer #socialLinks .fa:hover {
-      color: white !important; }
+      color: black !important; }
   .footer #copyright {
-    top: 20px; }
+    top: 10vh; }
   .footer #contact {
     top: 40px; }
     .footer #contact #mailLink {
@@ -176,70 +208,69 @@ a {
     .footer #contact #mailLink:hover {
       color: white !important; }
 
-@keyframes bgMove {
-  0% {
-    background-position-y: 30vh; }
-  50% {
-    background-position-y: 28vh; }
-  100% {
-    background-position-y: 30vh; } }
-
 #splashLogo {
-  max-width: 88rem;
+  padding-top: 15vh;
+  display: block;
+  margin: auto;
+  max-width: 100rem;
   width: 100%;
   height: auto;
-  fill: white;
-  stroke: #010A0A;
-  stroke-width: 1; }
+  fill: #E0DDCF;
+  stroke: #63aab8;
+  stroke-width: 10; }
   #splashLogo path {
     stroke-dasharray: 1500;
     stroke-dashoffset: -1500; }
     #splashLogo path:nth-of-type(1) {
-      animation: draw 800ms 250ms forwards; }
+      animation: draw 4000ms 250ms forwards; }
     #splashLogo path:nth-of-type(2) {
-      animation: draw 800ms 500ms forwards; }
+      animation: draw 4000ms 500ms forwards; }
     #splashLogo path:nth-of-type(3) {
-      animation: draw 800ms 750ms forwards; }
+      animation: draw 4000ms 750ms forwards; }
     #splashLogo path:nth-of-type(4) {
-      animation: draw 800ms 1000ms forwards; }
+      animation: draw 4000ms 1000ms forwards; }
     #splashLogo path:nth-of-type(5) {
-      animation: draw 800ms 1250ms forwards; }
+      animation: draw 4000ms 1250ms forwards; }
     #splashLogo path:nth-of-type(6) {
-      animation: draw 800ms 1500ms forwards; }
+      animation: draw 4000ms 1500ms forwards; }
     #splashLogo path:nth-of-type(7) {
-      animation: draw 800ms 1750ms forwards; }
+      animation: draw 4000ms 1750ms forwards; }
     #splashLogo path:nth-of-type(8) {
-      animation: draw 800ms 2000ms forwards; }
+      animation: draw 4000ms 2000ms forwards; }
     #splashLogo path:nth-of-type(9) {
-      animation: draw 800ms 2250ms forwards; }
+      animation: draw 4000ms 2250ms forwards; }
     #splashLogo path:nth-of-type(10) {
-      animation: draw 800ms 2500ms forwards; }
+      animation: draw 4000ms 2500ms forwards; }
     #splashLogo path:nth-of-type(11) {
-      animation: draw 800ms 2750ms forwards; }
+      animation: draw 4000ms 2750ms forwards; }
     #splashLogo path:nth-of-type(12) {
-      animation: draw 800ms 3000ms forwards; }
+      animation: draw 4000ms 3000ms forwards; }
     #splashLogo path:nth-of-type(13) {
-      animation: draw 800ms 3250ms forwards; }
+      animation: draw 4000ms 3250ms forwards; }
     #splashLogo path:nth-of-type(14) {
-      animation: draw 800ms 3500ms forwards; }
+      animation: draw 4000ms 3500ms forwards; }
     #splashLogo path:nth-of-type(15) {
-      animation: draw 800ms 3750ms forwards; }
+      animation: draw 4000ms 3750ms forwards; }
 
 @keyframes draw {
   100% {
     stroke-dashoffset: 0; } }
 
-.testClass {
-  color: brown; }
-
 #splashTitle {
-  animation-delay: 2000ms; }
+  animation-delay: 500ms; }
 
 #splashTitle2 {
-  animation-delay: 2300ms; }
+  animation-delay: 700ms; }
 
 #splashTitle3 {
-  animation-delay: 4000ms; }
+  font-weight: bold;
+  animation-delay: 1500ms; }
+  #splashTitle3 #sT1 {
+    color: #F3C545; }
+  #splashTitle3 #sT2 {
+    color: #638FB8; }
+  #splashTitle3 #sT3 {
+    color: #61B864; }
 
 .section {
   animation-delay: 200ms; }
@@ -251,7 +282,7 @@ a {
   animation-delay: 600ms; }
 
 .textAnim3 {
-  animation-delay: 800ms; }
+  animation-delay: 1400ms; }
 
 /* Button */
 .tcon {
@@ -380,6 +411,14 @@ a {
       font-size: 1em; }
     body h3 {
       font-size: 1.05em; }
+  #links {
+    top: 0.5vh !important;
+    position: absolute;
+    left: 0;
+    padding-left: 0vh; }
+  .section {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important; }
   .content {
     border: none !important;
     border-radius: 0 !important; }
@@ -395,5 +434,29 @@ a {
         max-height: 100px !important; }
     .content .headline {
       padding-left: 5vw !important; }
+    .content .plainText {
+      text-align: center !important; }
   .downArrow {
     display: none; } }
+
+/* deactivate animate.css on mobile */
+@media only screen and (max-width: 768px) {
+  .animated {
+    /*CSS transitions*/
+    -o-transition-property: none !important;
+    -moz-transition-property: none !important;
+    -ms-transition-property: none !important;
+    -webkit-transition-property: none !important;
+    transition-property: none !important;
+    /*CSS transforms*/
+    -o-transform: none !important;
+    -moz-transform: none !important;
+    -ms-transform: none !important;
+    -webkit-transform: none !important;
+    transform: none !important;
+    /*CSS animations*/
+    -webkit-animation: none !important;
+    -moz-animation: none !important;
+    -o-animation: none !important;
+    -ms-animation: none !important;
+    animation: none !important; } }
